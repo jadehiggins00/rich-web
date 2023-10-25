@@ -1,0 +1,21 @@
+/* .grid {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    margin: 0 0 1rem 0;
+  }
+  
+  .grid > div {
+    height: 100px;
+    background: red;
+    min-width: 10px;
+  } */
+/* 
+  .grid{
+    background-color: blue;
+    width: 25%;
+  } */
+  
+  body {
+    margin: 1rem;
+  }
