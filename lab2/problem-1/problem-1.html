@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="B:\rich-web\rich-Web\lab2\problem-1\problem-1.css">
+    <title>Phone Directory</title>
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="grid">
+            <div id="error"></div>
+            <div class="contact-form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="mobile" placeholder="Mobile">
+                <input type="email" id="email" placeholder="Email">
+                <button onclick="addContact()">Add Contact</button>
+            </div>
+        </div>
+
+        <div class="grid">
+            <h3>Search Contact by Mobile Number</h3>
+            <div class="search-input">
+                <input type="text" id="search" placeholder="Search by mobile" onkeyup="searchContact()">
+            </div>
+        </div>
+
+        <div id="noResult">No results found</div>
+
+        <table class="table"> 
+            <thead>
+                <tr>
+                    <th onclick="sortTable()">Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="contactsTable"></tbody>
+        </table>
+
+        <script src="B:\rich-web\rich-Web\lab2\problem-1\problem-1.js"></script>
+    </div>
+</body>
+
+</html>

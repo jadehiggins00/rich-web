@@ -1,0 +1,90 @@
+#error, #noResult {
+  color: red;
+  display: none;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+body, html {
+  height: 80%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  width: 240%;
+  max-width: 760px; 
+  box-sizing: border-box;
+  padding: 0 15px; 
+  padding-bottom: 3%;
+}
+
+.contact-form {
+  box-sizing: border-box;
+  border: 2px solid #028acf;
+  background-color: #9cd4f0;
+  border-radius: 20px;
+  padding: 35px;  
+  font-size: 18px;
+}
+
+.contact-form, .search-input {
+  display: grid;
+  gap: 10px;
+}
+
+.table {
+  border-collapse: collapse; 
+  width: 100%;               
+}
+
+.table thead {
+  border-bottom: 1px solid black;
+}
+
+.table tr {
+  border: 1px solid black;
+}
+
+.table th, .table td {
+  border: 1px solid black;
+  padding: 8px;              
+  text-align: left;          
+}
+
+
+/* #addContact {
+  width: 170%;
+  padding: 8%;
+} */
+
+#error {
+  color: red;
+  text-align: center;
+}
+
+#noResult {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .contact-form, .search-input {
+    grid-template-columns: repeat(3, 1fr) auto; 
+  }
+}
